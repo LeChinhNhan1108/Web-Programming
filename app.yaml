@@ -1,0 +1,12 @@
+application: s3309665
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /images
+  static_dir: images
+- url: /html
+  static_dir: html
+- url: /.*
+  script: helloworld.application
