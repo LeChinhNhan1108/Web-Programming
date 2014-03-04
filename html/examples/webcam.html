@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="stuff, to, help, search, engines, not" name="keywords">
+<meta content="What this page is about." name="description">
+<meta content="Display Webcam Stream" name="title">
+<title>Display Webcam Stream</title>
+  
+<style>
+#container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+</style>
+</head>
+  
+<body>
+<p>This is a demonstration of accessing a webcam from HTML5 getUserMedia.</p>
+    <video id="live_video" autoplay controls></video>
+    <script type="text/javascript">
+      video = document.getElementById("live_video");
+      navigator.webkitGetUserMedia({video:true, audio:true},
+          function(stream) {
+            video.src = window.webkitURL.createObjectURL(stream);
+          }
+      );
+    </script>
+</body>
+</html>
