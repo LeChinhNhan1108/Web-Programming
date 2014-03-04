@@ -1,1 +1,0 @@
-This is a web programming course. In which, I study about python and google app engine.
