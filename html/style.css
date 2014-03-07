@@ -1,0 +1,36 @@
+body {
+background-color: #e0ebff;
+background-image: url('images/blue.jpg');
+}
+
+#wrapper {
+background-color: #ffffc2;
+width: 900px;
+margin-top:auto;
+
+margin-left:auto;
+
+margin-right:auto;
+
+height: 850px;
+text-align: center;
+padding-top: 20px;
+}
+
+li,p {
+text-align:left;
+margin-left: 110px;
+}
+
+li {
+color: red;
+}
+
+h1{
+color: #993300;
+font-size: 40px;
+}
+
+h3{
+color: #993300;
+}
